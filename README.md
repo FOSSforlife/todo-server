@@ -7,5 +7,5 @@ The "/richtext" view enables me to embed this in a KDE Plasma 5 widget on my des
 NPM modules used:
 - express: for the server
 - ejs: for the templating engine
-- walk: to traverse the code directory
-- leasot: to parse each file for TODOs
+- [walk](https://git.coolaj86.com/coolaj86/fs-walk.js.git): to traverse the code directory
+- [leasot](https://github.com/pgilad/leasot): to parse each file for TODOs
