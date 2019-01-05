@@ -13,7 +13,7 @@ const colors = {
     FIXME: '#e00',
     TODO: '#ee0',
     XTRA: '#0aa'
-}
+};
 
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
@@ -41,4 +41,4 @@ app.get('/richtext', (req, res) => {
 
 const server = app.listen(2300, () => {
     console.log('todo-server is running');
-})
+});
