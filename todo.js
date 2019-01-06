@@ -32,7 +32,8 @@ module.exports.getTodos = async function (dirPath, customTags) {
         })
 
         walker.on('end', () => {
-            comments = comments.sort((t1, t2) => t1.kind > t2.kind);
+            // Sorts by type, then by name
+            comments = comments.sort((t1, t2) => (t1.kind >= t2.kind) ? (t1.kind > t2.kind) ? 1 : t1.text > t2.text : -1);
             console.log(comments);
             resolve(comments);
         })
